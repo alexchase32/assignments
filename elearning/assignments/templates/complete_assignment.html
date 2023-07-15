@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="us-ascii">
+  <title>Assignment Completion</title>
+  <link href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div id="learning-blocks">
+    <!-- Block 1: Fruit Matching Game -->
+    <div class="learning-block" id="block-1">
+      <h2>Fruit Matching Game</h2>
+
+      <div class="container">
+        <div class="row-container" id="spanishColumn">
+          <div class="box" data-fruit="apple">Manzana</div>
+          <div class="box" data-fruit="banana">Plátano</div>
+          <div class="box" data-fruit="orange">Naranja</div>
+          <div class="box" data-fruit="pear">Pera</div>
+          <div class="box" data-fruit="pineapple">Piña</div>
+        </div>
+        <div class="row-container" id="englishColumn">
+          <div class="box" data-fruit="apple">Apple</div>
+          <div class="box" data-fruit="banana">Banana</div>
+          <div class="box" data-fruit="orange">Orange</div>
+          <div class="box" data-fruit="pear">Pear</div>
+          <div class="box" data-fruit="pineapple">Pineapple</div>
+        </div>
+      </div>
+
+      <h3>Score: <span id="score">0</span></h3>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
